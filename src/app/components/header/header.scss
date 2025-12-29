@@ -1,0 +1,61 @@
+@use "../../scss/variables" as *;
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    gap: 10rem;
+    z-index: 999;
+    margin-top: 2rem;
+
+    .logo-container  {
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        .logo-icon {
+        width: 6rem;
+        margin-top: 1rem;
+    }
+        .logo-title {
+            font-size: 20px;
+            color: $brown-color;
+            margin-top: .5rem;
+        }
+
+        .logo-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+
+    .header-links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        a {
+            color: $brown-color;
+            font-weight: 600;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s ease;
+            
+            &:hover {
+                border-bottom-color: $brown-color;
+            }
+
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        color: $brown-color;
+    }
+}
