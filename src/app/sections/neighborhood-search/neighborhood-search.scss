@@ -1,0 +1,91 @@
+@use "../../scss/variables" as *;
+
+.neighborhood-container {
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        margin: 1.5rem 0;
+        .bar-title {
+            width: 5rem;
+            height: 1px;
+            background-color: $primary-color;
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+
+    .neighborhood-container-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .arrow-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-color;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 100%;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .neighborhood-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .neighborhood-card {
+            position: relative;
+            cursor: pointer;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.05);
+            }
+            .image-wrapper {
+                position: relative;
+
+                img {
+                    width: 18rem;
+                    height: 22rem;
+                    border-radius: .5rem;
+                 }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(to bottom, rgb(47, 50, 59) 0%, rgba(0, 0, 0, 0) 100%);
+                    border-radius: .5rem;
+                }   
+            }
+           .neighborhood-card-content {
+                position: absolute;
+                top: 0;
+                color: #fff;
+                padding: 2rem;
+
+                h1 {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+           }
+        }
+    }
+    }
+    
+}
