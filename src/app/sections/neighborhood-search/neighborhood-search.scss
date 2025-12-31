@@ -11,12 +11,12 @@
         .bar-title {
             width: 5rem;
             height: 1px;
-            background-color: $primary-color;
+            background-color: $brown-color;
         }
         h1 {
             font-size: 20px;
             font-weight: 600;
-            color: $primary-color;
+            color: $brown-color;
         }
     }
 
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
 
         .arrow-icon {
             display: flex;
@@ -88,4 +88,22 @@
     }
     }
     
+    .neighborhood-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        margin: 1rem 0;h
+
+        .pagination-circle {
+            width: .5rem;
+            height:  .5rem;
+            background-color: $grey-color;
+            border-radius: 100%;
+
+            &:nth-child(1) {
+                background-color: $primary-color;
+            }
+        }
+    }
 }

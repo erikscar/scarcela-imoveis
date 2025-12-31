@@ -4,10 +4,11 @@ import { HomeSection } from './sections/home-section/home-section';
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { NeighborhoodSearch } from "./sections/neighborhood-search/neighborhood-search";
+import { Recents } from "./sections/recents/recents";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeSection, Footer, Header, NeighborhoodSearch],
+  imports: [RouterOutlet, HomeSection, Footer, Header, NeighborhoodSearch, Recents],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

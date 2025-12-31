@@ -1,0 +1,123 @@
+@use "../../scss/variables" as *;
+
+.featured-container {   
+    margin: 2rem 0;
+    
+    .section-title-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .section-title {
+            color: $brown-color;
+            font-weight: 600;
+        }
+
+        .section-description {
+            color: $grey-color;
+        }
+
+        .featured-option-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            
+            button {
+                width: 5rem;
+                padding: .35rem 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: .25rem;
+                color: $brown-color;
+                border: .75px solid $brown-color;
+                cursor: pointer;
+                &:nth-child(1) {
+                    background-color: $brown-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .featured-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+            gap: 1rem;
+
+            .featured-card {
+                max-width: 20rem;
+                position: relative;
+
+                .featured-card-image {
+                    width: 100%;
+                }
+                    .featured-card-tag {
+                        position: absolute;
+                        background-color: #EB6753;
+                        top: 15px;
+                        left: 15px;
+                        border-radius: .5rem;
+                        color: #fff;
+                        padding: .4rem .75rem;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                    
+                    .featured-card-content {
+                        padding: .5rem;
+                        .featured-card-value {
+                            background-color: #fff;
+                            color: $brown-color;
+                            border-radius: .5rem;
+                            font-size: 20px;
+                            font-weight: 700;
+                    }
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $grey-color;
+                    }
+
+                    .card-tag-container-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .card-tag-container {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                            margin-top: .5rem;
+                        }
+
+                      .tag-wrapper {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: .5rem;
+                            border: .5px solid $grey-color;
+                            border-radius: .75rem;
+                            padding: .15rem .75rem;
+                            cursor: pointer;
+                            transition: 1s;
+
+                                i, p {
+                                    font-size: 14px;
+                                }
+                            
+                                &:hover {
+                                    background-color: rgba(0, 0, 0, 0.15);
+                                }
+                        }
+                    }
+                    
+                }
+                
+                }
+            }    
+    }                         
