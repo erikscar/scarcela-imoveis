@@ -11,10 +11,12 @@
         .section-title {
             color: $brown-color;
             font-weight: 600;
+            font-size: 24px;
         }
 
         .section-description {
             color: $grey-color;
+            font-size: 15px;
         }
 
         .featured-option-buttons {
@@ -47,9 +49,8 @@
             align-items: center;
             margin: 1.5rem 0;
             gap: 1rem;
-
             .featured-card {
-                max-width: 20rem;
+                max-width: 19rem;
                 position: relative;
 
                 .featured-card-image {
@@ -68,7 +69,7 @@
                     }
                     
                     .featured-card-content {
-                        padding: .5rem;
+
                         .featured-card-value {
                             background-color: #fff;
                             color: $brown-color;
@@ -77,6 +78,10 @@
                             font-weight: 700;
                     }
 
+                    h1 {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
                     h2 {
                         font-weight: 500;
                         font-size: 14px;
@@ -107,17 +112,54 @@
                             transition: 1s;
 
                                 i, p {
-                                    font-size: 14px;
+                                    font-size: 13px;
                                 }
                             
                                 &:hover {
                                     background-color: rgba(0, 0, 0, 0.15);
                                 }
+
+                                &:last-child {
+                                    border-left: 1px solid $grey-color;
+                                }
+                        }
+
+                        .divider {
+                            width: 1px;
+                            height: 1.25rem;
+                            background-color: $grey-color;
+                            margin: 0 .5rem;
                         }
                     }
                     
                 }
-                
+                .featured-card-button-container {
+                    display: flex;
+                    gap: .5rem;
+                    margin: 1rem 0;
+
+                    .more-info-button {
+                        width: 85%;
+                        background-color: $primary-color;
+                        border: 0;
+                        color: #fff;
+                        border-radius: .25rem;
+                        padding: .35rem 0;
+                        font-weight: 600;
+                    }
+
+                    .message-button {
+                        width: 15%;
+                        border: 1px solid $primary-color;
+                        background-color: transparent;
+                        color: $primary-color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        border-radius: .25rem;
+                    }
+                }
                 }
             }    
     }                         
